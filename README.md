@@ -1,0 +1,11 @@
+UIKit iOS Projet with multiple features such as:
+- CustomPinsMaps
+- Geofencing
+- InfiniteScroll
+- Messaging
+- Reachablility UI
+- StickyGridCollectionView
+- STLViewer
+- SubscriptionWithSwiftyStoreKit
+- SyncroDataOffline
+- TabSegmentControl
