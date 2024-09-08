@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="grK-1S-nJT" customClass="StickyLeftCollectionViewCell" customModule="MySwiftBox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="224"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="409" height="224"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VjZ-fk-95q">
+                        <rect key="frame" x="0.0" y="0.0" width="409" height="224"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FXy-aD-6b6">
+                                <rect key="frame" x="24" y="33" width="346" height="158"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IHY-qX-PPb">
+                                        <rect key="frame" x="158" y="64" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="4mE-eT-Bap"/>
+                                            <constraint firstAttribute="width" constant="30" id="63G-6D-2G2"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="IHY-qX-PPb" firstAttribute="centerY" secondItem="FXy-aD-6b6" secondAttribute="centerY" id="emH-al-Y24"/>
+                                    <constraint firstItem="IHY-qX-PPb" firstAttribute="centerX" secondItem="FXy-aD-6b6" secondAttribute="centerX" id="l1d-U8-zZE"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a2B-YZ-N89">
+                                <rect key="frame" x="400" y="0.0" width="9" height="224"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="9" id="m2v-6F-tnN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FXy-aD-6b6" firstAttribute="top" secondItem="VjZ-fk-95q" secondAttribute="top" constant="33" id="7pz-Tn-hxy"/>
+                            <constraint firstAttribute="bottom" secondItem="FXy-aD-6b6" secondAttribute="bottom" constant="33" id="9sg-6b-klc"/>
+                            <constraint firstItem="FXy-aD-6b6" firstAttribute="leading" secondItem="VjZ-fk-95q" secondAttribute="leading" constant="24" id="BJ0-Nc-WuK"/>
+                            <constraint firstAttribute="trailing" secondItem="a2B-YZ-N89" secondAttribute="trailing" id="EH5-9x-YX4"/>
+                            <constraint firstAttribute="bottom" secondItem="a2B-YZ-N89" secondAttribute="bottom" id="PaL-OQ-x1h"/>
+                            <constraint firstItem="a2B-YZ-N89" firstAttribute="leading" secondItem="FXy-aD-6b6" secondAttribute="trailing" constant="30" id="TOp-de-oco"/>
+                            <constraint firstItem="a2B-YZ-N89" firstAttribute="top" secondItem="VjZ-fk-95q" secondAttribute="top" id="gIu-NM-oUq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="VjZ-fk-95q" firstAttribute="top" secondItem="grK-1S-nJT" secondAttribute="top" id="0TN-gp-abL"/>
+                <constraint firstAttribute="trailing" secondItem="VjZ-fk-95q" secondAttribute="trailing" id="GS5-DS-At9"/>
+                <constraint firstItem="VjZ-fk-95q" firstAttribute="leading" secondItem="grK-1S-nJT" secondAttribute="leading" id="GUv-GL-6Oy"/>
+                <constraint firstAttribute="bottom" secondItem="VjZ-fk-95q" secondAttribute="bottom" id="lgT-06-eRp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="5V8-Nd-DsZ"/>
+            <size key="customSize" width="409" height="224"/>
+            <connections>
+                <outlet property="gradiantView" destination="a2B-YZ-N89" id="AEB-z9-IJZ"/>
+                <outlet property="imageView" destination="IHY-qX-PPb" id="0HF-Hc-aMR"/>
+            </connections>
+            <point key="canvasLocation" x="145.6521739130435" y="149.33035714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>

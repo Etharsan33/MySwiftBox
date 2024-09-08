@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Example Tab Segment Control View Controller-->
+        <scene sceneID="rgn-Ka-s8X">
+            <objects>
+                <viewController storyboardIdentifier="ExampleTabSegmentControlViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HqG-Dc-7K2" customClass="ExampleTabSegmentControlViewController" customModule="MySwiftBox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QmK-zB-4pH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="enh-MC-HAJ">
+                                <rect key="frame" x="20" y="44" width="384" height="33"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="c28-2k-qVU"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title=""/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="segmentChangeAction:" destination="HqG-Dc-7K2" eventType="valueChanged" id="hgm-df-Zbc"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r9v-tI-3ZB">
+                                <rect key="frame" x="20" y="76" width="384" height="4"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="zCL-Q5-MLF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RfO-Sx-hHp"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RfO-Sx-hHp" firstAttribute="trailing" secondItem="enh-MC-HAJ" secondAttribute="trailing" constant="10" id="5MQ-0c-PQn"/>
+                            <constraint firstItem="r9v-tI-3ZB" firstAttribute="trailing" secondItem="enh-MC-HAJ" secondAttribute="trailing" id="632-QQ-p5V"/>
+                            <constraint firstItem="r9v-tI-3ZB" firstAttribute="leading" secondItem="enh-MC-HAJ" secondAttribute="leading" id="9cx-qz-hb2"/>
+                            <constraint firstItem="enh-MC-HAJ" firstAttribute="leading" secondItem="RfO-Sx-hHp" secondAttribute="leading" constant="20" id="IEb-V3-hXU"/>
+                            <constraint firstItem="enh-MC-HAJ" firstAttribute="top" secondItem="RfO-Sx-hHp" secondAttribute="top" id="i9W-nl-nS4"/>
+                            <constraint firstItem="r9v-tI-3ZB" firstAttribute="top" secondItem="enh-MC-HAJ" secondAttribute="bottom" id="qkE-AV-gue"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="barView" destination="r9v-tI-3ZB" id="v0e-Dd-tQE"/>
+                        <outlet property="segmentControl" destination="enh-MC-HAJ" id="de0-V2-Xdc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kVJ-aS-IwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="213.04347826086959" y="76.339285714285708"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="esA-Fk-pNC" customClass="StickyGridCollectionViewCell" customModule="MySwiftBox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="530" height="237"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="530" height="237"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emc-pK-ehy">
+                        <rect key="frame" x="4" y="21" width="521" height="195"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QNT-Pq-8HQ">
+                        <rect key="frame" x="529" y="0.0" width="1" height="237"/>
+                        <color key="backgroundColor" red="0.87450980389999999" green="0.83137254900000002" blue="0.95686274510000002" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="Ap5-iA-umY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="emc-pK-ehy" firstAttribute="top" secondItem="esA-Fk-pNC" secondAttribute="top" constant="21" id="6dD-nL-5nh"/>
+                <constraint firstItem="QNT-Pq-8HQ" firstAttribute="leading" secondItem="emc-pK-ehy" secondAttribute="trailing" constant="4" id="EIg-ID-MJ9"/>
+                <constraint firstItem="emc-pK-ehy" firstAttribute="leading" secondItem="esA-Fk-pNC" secondAttribute="leading" constant="4" id="Hau-j1-JuN"/>
+                <constraint firstAttribute="bottom" secondItem="emc-pK-ehy" secondAttribute="bottom" constant="21" id="b45-sV-FL6"/>
+                <constraint firstItem="QNT-Pq-8HQ" firstAttribute="top" secondItem="esA-Fk-pNC" secondAttribute="top" id="dLD-Xx-jUe"/>
+                <constraint firstAttribute="bottom" secondItem="QNT-Pq-8HQ" secondAttribute="bottom" id="pfP-eK-mu6"/>
+                <constraint firstAttribute="trailing" secondItem="QNT-Pq-8HQ" secondAttribute="trailing" id="xKz-Wx-knL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="DBb-lF-5gB"/>
+            <size key="customSize" width="530" height="237"/>
+            <connections>
+                <outlet property="borderView" destination="QNT-Pq-8HQ" id="iiT-bc-tTe"/>
+                <outlet property="dataLabel" destination="emc-pK-ehy" id="1qB-8f-foV"/>
+            </connections>
+            <point key="canvasLocation" x="182.60869565217394" y="85.379464285714278"/>
+        </collectionViewCell>
+    </objects>
+</document>

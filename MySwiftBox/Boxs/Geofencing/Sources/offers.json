@@ -1,0 +1,16 @@
+[
+    {
+        "id": "1",
+        "name": "10 % de moins au mcdo",
+        "description": "Offre valable uniquement sur un menu maxi",
+        "latitude": 44.800161,
+        "longitude": -0.596893
+    },
+    {
+        "id": "2",
+        "name": "-5€ au burger King",
+        "description": "Offre valable uniquement sur un buger",
+        "latitude": 44.799400,
+        "longitude": -0.597923
+    }
+]

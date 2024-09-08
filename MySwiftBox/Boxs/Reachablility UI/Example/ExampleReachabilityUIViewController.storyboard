@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Example ReachabilityUI View Controller-->
+        <scene sceneID="YEU-5f-DkU">
+            <objects>
+                <viewController storyboardIdentifier="ExampleReachabilityUIViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Hdo-iS-6BQ" customClass="ExampleReachabilityUIViewController" customModule="MySwiftBox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pJG-yk-uD7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cKe-MM-kKH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zst-F0-Yvr" firstAttribute="bottom" secondItem="cKe-MM-kKH" secondAttribute="bottom" id="NtV-Rv-jwk"/>
+                            <constraint firstItem="cKe-MM-kKH" firstAttribute="leading" secondItem="zst-F0-Yvr" secondAttribute="leading" id="Y0c-iW-ghb"/>
+                            <constraint firstItem="zst-F0-Yvr" firstAttribute="trailing" secondItem="cKe-MM-kKH" secondAttribute="trailing" id="dIJ-bT-CIx"/>
+                            <constraint firstItem="cKe-MM-kKH" firstAttribute="top" secondItem="zst-F0-Yvr" secondAttribute="top" id="wNS-8A-CAl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zst-F0-Yvr"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="NtV-Rv-jwk" id="vwm-ms-G23"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e1V-Uz-lyc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="137"/>
+        </scene>
+    </scenes>
+</document>
